@@ -8,12 +8,14 @@
         background-color: black;
         height: 100px;
         width: 100px;
-        margin: 25px;
+        margin: 30px;
         display: inline-block;
       }
       .outer-box {
         height: 200px;
         width: 350px;
+        padding-top: 30px;
+        padding-left: 30px;
       }
       #red-box {
         background-color: red;
@@ -21,15 +23,17 @@
       #blue-box {
         background-color: blue;
       }
+      body {
+        margin: 0;
+      }
     </style>
   </head>
   <body>
-    <div>
+    <div class="outer-box" id="red-box">
     <div class="black-box"></div>
     <div class="black-box"></div>
     </div>
-    <br>
-    <div>
+    <div class="outer-box" id="blue-box">
     <div class="black-box"></div>
     <div class="black-box"></div>
     </div>
